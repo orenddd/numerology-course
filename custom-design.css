@@ -1,0 +1,165 @@
+/* 
+  Premium Design for Numerology Course - V5 REFINED LOGOS & VIDEO
+  Focus: Deep Navy, Gold Accents, Clean Logo Display
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #0a1526;
+  --gold-light: #f9e29c;
+  --gold-mid: #d4af37;
+  --gold-dark: #8e6d31;
+  --text-white: #ffffff;
+  --text-gold: #e6c27a;
+  --glow-gold: 0 0 25px rgba(212, 175, 55, 0.2);
+  --metallic-gradient: linear-gradient(135deg, #8e6d31 0%, #d4af37 25%, #f9e29c 50%, #d4af37 75%, #8e6d31 100%);
+}
+
+body {
+  background-color: var(--bg-deep) !important;
+  background-image: radial-gradient(circle at center, #162a47 0%, #0a1526 100%) !important;
+  color: var(--text-white) !important;
+  font-family: 'Assistant', sans-serif !important;
+}
+
+/* "As Seen On" Section Refinement */
+.elementor-element-4321c03 .elementor-widget-container {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid var(--gold-dark) !important;
+  border-radius: 15px !important;
+  padding: 20px !important;
+  margin-bottom: 40px !important;
+  box-shadow: var(--glow-gold);
+}
+
+.elementor-element-4321c03 img {
+  filter: brightness(0) invert(1) !important; /* Make logos white for premium look */
+  opacity: 0.8;
+  max-width: 80% !important;
+  transition: 0.3s;
+}
+
+.elementor-element-4321c03 img:hover {
+  opacity: 1;
+  filter: none !important; /* Show original colors on hover if desired, or keep white */
+}
+
+/* Video Frame Refinement */
+.elementor-widget-video .elementor-wrapper {
+  border: 1px solid var(--gold-mid) !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5), var(--glow-gold) !important;
+  transition: transform 0.3s ease;
+}
+
+.elementor-widget-video .elementor-wrapper:hover {
+  transform: scale(1.01);
+}
+
+/* Text Below Video */
+.elementor-element-6cb5c1a p {
+  color: var(--text-white) !important;
+  font-size: 1.25rem !important;
+  line-height: 1.8 !important;
+  text-align: center !important;
+  font-weight: 300 !important;
+  margin-top: 30px !important;
+  letter-spacing: 0.02em;
+}
+
+.elementor-element-6cb5c1a span {
+  background-color: rgba(212, 175, 55, 0.15) !important;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--gold-light) !important;
+}
+
+/* Headlines */
+.elementor-heading-title {
+  color: var(--text-gold) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Buttons */
+.elementor-button {
+  background: var(--metallic-gradient) !important;
+  color: var(--bg-deep) !important;
+  font-weight: 800 !important;
+  border-radius: 50px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3) !important;
+  border: 1px solid var(--gold-light) !important;
+}
+
+/* Icon List Items */
+.elementor-icon-list-item {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(212, 175, 55, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 15px 25px !important;
+}
+
+/* ===== HERO SECTION FIX ===== */
+/* עמודת התמונה ריקה ב-desktop - מסתירים אותה */
+@media (min-width: 1025px) {
+  .elementor-element-1e46e5d {
+    display: none !important;
+  }
+
+  /* עמודת הטקסט תתפוס את כל הרוחב */
+  .elementor-element-5d3d046 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* padding מתאים כדי שהטקסט לא יגע בקצוות */
+  .elementor-element-5d3d046 > .elementor-element-populated {
+    padding: 60px 120px !important;
+  }
+}
+
+/* תיקון padding לדסקטופ בינוני */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .elementor-element-5d3d046 > .elementor-element-populated {
+    padding-right: 40px !important;
+  }
+}
+
+/* ===== SECTION BACKGROUNDS FIX ===== */
+/* שחזור רקעים חשובים שנמחקו ע"י ה-override הגלובלי */
+.elementor-element-0d2edcf {
+  background: linear-gradient(135deg, #0a1526 0%, #162a47 50%, #0d1e38 100%) !important;
+}
+
+/* אלמנטים עם רקע צהוב/זהב בעיצוב המקורי */
+.elementor-element-cc5fff5,
+.elementor-element-d72708a,
+.elementor-element-7c10bb5,
+.elementor-element-57f053c,
+.elementor-element-4969b59 {
+  background: transparent !important;
+}
+
+/* ===== FIX SHAPE DIVIDER OVERFLOW ===== */
+.elementor-shape svg {
+  overflow: hidden;
+}
+.elementor-shape-bottom svg,
+.elementor-shape-top svg {
+  width: calc(100% + 2px) !important;
+  max-width: calc(100% + 2px);
+}
+
+/* ===== FIX LETTER SPACING FOR HEBREW ===== */
+.elementor-heading-title,
+.elementor-headline-plain-text,
+.elementor-headline-dynamic-text {
+  letter-spacing: 0 !important;
+}
+
+/* ===== LOGO / AS-SEEN-ON FIX ===== */
+.elementor-element-4321c03 img[src=""] {
+  display: none !important;
+}

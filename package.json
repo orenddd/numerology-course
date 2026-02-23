@@ -1,0 +1,15 @@
+{
+  "name": "numerology-course",
+  "version": "1.0.0",
+  "description": "Numerology Course Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files '*.html, *.css, *.js, **/*'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.0"
+  }
+}
